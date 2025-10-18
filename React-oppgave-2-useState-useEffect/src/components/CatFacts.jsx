@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './CatFacts.css';
 
 function CatFacts() {
   const [facts, setFacts] = useState([]);
