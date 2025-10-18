@@ -32,8 +32,8 @@ function Users() {
   }
 
   return (
-    <div className="main-container">
-      <div className="input-container">
+    <div className={styles['main-container']}>
+      <div className={styles['input-container']}>
         <input
           type="text"
           placeholder="Enter your name"

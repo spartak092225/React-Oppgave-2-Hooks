@@ -33,7 +33,7 @@ function CatFacts() {
   }
 
   return (
-    <div className="main-container">
+    <div className={styles['main-container']}>
       <h1>🐾 &nbsp; Cat Facts &nbsp; 🐾</h1>
       <ul>
         {facts.map((fact, index) => (

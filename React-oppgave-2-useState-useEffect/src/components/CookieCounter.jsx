@@ -10,11 +10,11 @@ function CookieCounter() {
   }
 
   return (
-    <div className="cookie-counter-container">
-      <p className="cookie-number">{count}</p>
+    <div className={styles['cookie-counter-container']}>
+      <p className={styles['cookie-number']}>{count}</p>
       <button
         onClick={oneMoreCookie}
-        className="cookie-btn"
+        className={styles['cookie-btn']}
       >
         <img
           src="public\cookie-1.png"
