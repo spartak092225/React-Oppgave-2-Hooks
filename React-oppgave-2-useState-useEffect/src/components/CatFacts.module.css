@@ -1,7 +1,4 @@
-*{
-   font-family: "Comic Relief", system-ui;
-   color: white;
-}
+
 
 .main-container {
   width: 100%;
@@ -18,6 +15,8 @@
 .main-container h1{
    font-size: 4rem;
    min-width: 600px;
+   font-family: "Comic Relief", system-ui;
+   color: white;
 }
 
 .main-container ul{
@@ -31,6 +30,8 @@
   height: 80px;
   list-style: none;
   font-size: 1.2rem;
+  font-family: "Comic Relief", system-ui;
+   color: white;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
