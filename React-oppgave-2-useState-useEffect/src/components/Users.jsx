@@ -52,7 +52,16 @@ function Users() {
       <ul>
         {users.map((user, index) => (
           <li key={user.email || index}>
-            Name: {user.username} <br /> Email: {user.email}
+            {
+              <div className={styles['user-container']}>
+                <p className={styles['name-container']}>
+                  <strong>Name:</strong> {user.username}
+                </p>
+                <p className={styles['email-container']}>
+                  <strong>Email:</strong> {user.email}
+                </p>
+              </div>
+            }
           </li>
         ))}
       </ul>
