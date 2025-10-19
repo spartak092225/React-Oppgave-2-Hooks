@@ -1,61 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-   font-family: "Saira", sans-serif;
-   margin: 0;
-   padding: 0;
+* {
+  font-family: "Saira", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
   width: 100%;
-  max-height: 90vh;
   min-height: 90vh;
-  border-radius: 6px;
-  padding: 50px;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  padding: 50px;
+  border-radius: 6px;
   background: rgba(255, 243, 213, 0.334);
-  box-shadow: 0px 0px 3px rgba(189, 175, 140, 0.622);
+  box-shadow: 0 0 3px rgba(189, 175, 140, 0.622);
 }
-
 
 .input-container {
   display: flex;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
 }
 
 input {
   width: 200px;
   height: 30px;
   padding-left: 10px;
-  border-radius: 6px;
   border: none;
-  box-shadow: 0px 0px 2px rgb(60, 60, 60);
+  border-radius: 6px;
+  box-shadow: 0 0 2px rgb(60, 60, 60);
 }
 
-.input-container button{
+.input-container button {
   width: 100px;
   height: 30px;
   background: white;
-  border-radius: 6px;
   border: none;
-  box-shadow: 0px 0px 2px rgb(60, 60, 60);
+  border-radius: 6px;
+  box-shadow: 0 0 2px rgb(60, 60, 60);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .input-container button:hover,
-.user-container:hover{
+.user-container:hover {
   background: rgb(241, 241, 241);
 }
 
-.input-container button:active{
-  translate: 0px 1px;
+.input-container button:active {
+  translate: 0 1px;
   background: rgb(226, 226, 226);
 }
 
@@ -64,21 +62,20 @@ ul {
   overflow-y: scroll;
 }
 
- .user-container {
+.user-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 20px;
   width: 300px;
   height: 80px;
-  background: white;
+  margin-bottom: 20px;
   padding: 10px;
+  background: white;
   border-radius: 6px;
   border: 1px solid rgba(189, 175, 140, 0.5);
   transition: all 0.2s ease;
-} 
+}
 
 .user-container:hover {
   background: ;
 }
-
