@@ -6,9 +6,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url("/public/medium-vecteezy_empty-space-background-with-cat-illustration_24569685_medium.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .main-container h1 {

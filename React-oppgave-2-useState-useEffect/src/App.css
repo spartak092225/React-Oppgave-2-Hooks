@@ -1,0 +1,24 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 50px;
+}
+.navbar button{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+}
+
+.navbar button:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+}
+
+.navbar button:active{
+  translate: 0px 1px;
+}
