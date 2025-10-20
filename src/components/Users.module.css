@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   font-family: "Saira", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .main-container {
@@ -14,18 +15,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   padding: 50px;
   border-radius: 6px;
-  background: rgba(255, 243, 213, 0.334);
-  box-shadow: 0 0 3px rgba(189, 175, 140, 0.622);
+  border: 1px solid grey;
 }
 
 .input-container {
   display: flex;
   align-items: center;
   gap: 20px;
-
 }
 
 input {
@@ -65,7 +64,6 @@ ul {
   flex-direction: column;
   align-items: center;
   list-style: none;
-
 }
 
 .user-container {
@@ -73,15 +71,11 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  height: 80px;
+  height: 60px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 5px 10px;
   background: white;
   border-radius: 6px;
   border: 1px solid rgba(189, 175, 140, 0.5);
   transition: all 0.2s ease;
-}
-
-.user-container:hover {
-  background: ;
 }

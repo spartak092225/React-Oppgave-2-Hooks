@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import styles from './CatFacts.module.css';
+import { useState, useEffect } from "react";
+import styles from "./CatFacts.module.css";
 
 function CatFacts() {
   const [facts, setFacts] = useState([]);
@@ -7,10 +7,10 @@ function CatFacts() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://catfact.ninja/facts?limit=5')
+    fetch("https://catfact.ninja/facts?limit=5")
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Noe gikk galt med API-et');
+          throw new Error("Noe gikk galt med API-et");
         }
         return response.json();
       })
@@ -29,11 +29,11 @@ function CatFacts() {
   }
 
   if (error) {
-    return <p style={{ color: 'red' }}>Feil: {error}</p>;
+    return <p style={{ color: "red" }}>Feil: {error}</p>;
   }
 
   return (
-    <div className={styles['main-container']}>
+    <div className={styles["main-container"]}>
       <h1>🐾 &nbsp; Cat Facts &nbsp; 🐾</h1>
       <ul>
         {facts.map((fact, index) => (

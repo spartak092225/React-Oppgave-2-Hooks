@@ -1,19 +1,25 @@
-.cookie-counter-container{
+* {
+  font-family: "Saira", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cookie-counter-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   margin-bottom: 100px;
 }
 .cookie-number {
-  font-size: 15rem;
+  font-size: 12rem;
   font-family: "Comic Relief", system-ui;
   font-weight: 700;
 }
 
 .cookie-btn {
-  scale: 1.5;
+  scale: 1.2;
   background: none;
   border: none;
   cursor: pointer;
