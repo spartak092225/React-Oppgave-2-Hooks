@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import styles from "./CookieCounter.module.css";
+import cookieImg from "../assets/cookie-1.png";
 
 function CookieCounter() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ function CookieCounter() {
     <div className={styles["cookie-counter-container"]}>
       <p className={styles["cookie-number"]}>{count}</p>
       <button onClick={oneMoreCookie} className={styles["cookie-btn"]}>
-        <img src="/cookie-1.png" alt="image of a cookie" width="200px" />
+        <img src={cookieImg} alt="image of a cookie" width="200px" />
       </button>
     </div>
   );
