@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import styles from './Users.module.css';
+import React, { useState } from "react";
+import styles from "./Users.module.css";
 
 function Users() {
   const mockData = [
-    { username: 'Ola Normann', email: 'ola.normann@norge.no' },
-    { username: 'Torleif', email: 'torleif@kodehode.no' },
-    { username: 'Jan Egil', email: 'jan.egil@kodehode.no' },
-    { username: 'Sander', email: 'sander@kodehode.no' },
+    { username: "Ola Normann", email: "ola.normann@norge.no" },
+    { username: "Torleif", email: "torleif@kodehode.no" },
+    { username: "Jan Egil", email: "jan.egil@kodehode.no" },
+    { username: "Sander", email: "sander@kodehode.no" },
   ];
 
   const [users, setUsers] = useState(mockData);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const getNameInput = function getUserName(event) {
     return setName(event.target.value);
@@ -27,13 +27,13 @@ function Users() {
     if (!name || !email) return;
     const newUser = { username: enteredName, email: enteredEmail };
     setUsers((prev) => [...prev, newUser]);
-    setName('');
-    setEmail('');
+    setName("");
+    setEmail("");
   }
 
   return (
-    <div className={styles['main-container']}>
-      <div className={styles['input-container']}>
+    <div className={styles["main-container"]}>
+      <div className={styles["input-container"]}>
         <input
           type="text"
           placeholder="Enter your name"
@@ -53,11 +53,11 @@ function Users() {
         {users.map((user, index) => (
           <li key={user.email || index}>
             {
-              <div className={styles['user-container']}>
-                <p className={styles['name-container']}>
+              <div className={styles["user-container"]}>
+                <p className={styles["name-container"]}>
                   <strong>Name:</strong> {user.username}
                 </p>
-                <p className={styles['email-container']}>
+                <p className={styles["email-container"]}>
                   <strong>Email:</strong> {user.email}
                 </p>
               </div>
